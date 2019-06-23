@@ -7,7 +7,7 @@ const Browse = () => (
     <Title>Navegar</Title>
 
     <List>
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c5/Linkin_Park_Hunting_Party.jpg/220px-Linkin_Park_Hunting_Party.jpg"
           alt="Playlist"
@@ -15,7 +15,7 @@ const Browse = () => (
         <strong>Podcast de Tecnologia</strong>
         <p>Aprenda um pouco sobre o mundo da tecnologia</p>
       </Playlist>
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c5/Linkin_Park_Hunting_Party.jpg/220px-Linkin_Park_Hunting_Party.jpg"
           alt="Playlist"
@@ -23,7 +23,7 @@ const Browse = () => (
         <strong>Podcast de Tecnologia</strong>
         <p>Aprenda um pouco sobre o mundo da tecnologia</p>
       </Playlist>
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c5/Linkin_Park_Hunting_Party.jpg/220px-Linkin_Park_Hunting_Party.jpg"
           alt="Playlist"
@@ -31,7 +31,7 @@ const Browse = () => (
         <strong>Podcast de Tecnologia</strong>
         <p>Aprenda um pouco sobre o mundo da tecnologia</p>
       </Playlist>
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c5/Linkin_Park_Hunting_Party.jpg/220px-Linkin_Park_Hunting_Party.jpg"
           alt="Playlist"
