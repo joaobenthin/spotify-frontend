@@ -25,7 +25,7 @@ import PauseIcon from '../../assets/images/pause.svg'
 import ForwardIcon from '../../assets/images/forward.svg'
 import RepeatIcon from '../../assets/images/repeat.svg'
 
-const Player = ({ player, play, pause, next, prev, playing, position, duration, handlePosition, setPosition, positionShown, progress }) => (
+const Player = ({ player, play, pause, next, prev, playing, position, duration, handlePosition, setPosition, positionShown, progress, setVolume }) => (
   <Container>
     { !!player.currentSong && (
       <Sound
@@ -34,6 +34,7 @@ const Player = ({ player, play, pause, next, prev, playing, position, duration, 
         onFinishedPlaying={next}
         onPlaying={playing}
         position={player.position}
+        volume={player.volume}
       />
     ) }
 
@@ -102,7 +103,8 @@ const Player = ({ player, play, pause, next, prev, playing, position, duration, 
         railStyle={{ background: '#404040', borderRadius: 10 }}
         trackStyle={{ background: '#FFF' }}
         handleStyle={{ display: 'none' }}
-        value={100}
+        value={player.volume}
+        onChange={setVolume}
       />
     </Volume>
   </Container>
@@ -128,7 +130,8 @@ Player.propTypes = {
   handlePosition: PropTypes.func.isRequired,
   setPosition: PropTypes.func.isRequired,
   positionShown: PropTypes.string.isRequired,
-  progress: PropTypes.number.isRequired
+  progress: PropTypes.number.isRequired,
+  setVolume: PropTypes.func.isRequired
 }
 
 function msToTime (duration) {
