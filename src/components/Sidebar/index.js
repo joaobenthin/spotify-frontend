@@ -79,7 +79,6 @@ class Sidebar extends Component {
               <span>PLAYLISTS</span>
               {this.props.playlists.loading && <Loading />}
             </li>
-            {console.log(this.props.playlists.data)}
             {this.props.playlists.data.map(playlist => (
               <li key={playlist.id}>
                 <Link to={`/playlists/${playlist.id}`}>{playlist.title}</Link>
